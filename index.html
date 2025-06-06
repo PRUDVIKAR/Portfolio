@@ -4,12 +4,199 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-    <script type="module" crossorigin src="./assets/index-CYIQ3SfM.js"></script>
+    <title>Prudvikar Donthagani - Portfolio</title>
     <link rel="stylesheet" crossorigin href="./assets/index-BnRpCan8.css">
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root" class="min-h-screen bg-gradient-to-br from-zinc-900 to-black text-white">
+      <nav class="flex justify-center gap-6 text-sm md:text-base font-medium sticky top-0 z-50 bg-black/70 backdrop-blur py-4 shadow">
+        <a href="#about" class="hover:text-purple-400">About</a>
+        <a href="#experience" class="hover:text-purple-400">Experience</a>
+        <a href="#skills" class="hover:text-purple-400">Skills</a>
+        <a href="#projects" class="hover:text-purple-400">Projects</a>
+        <a href="#achievements" class="hover:text-purple-400">Achievements</a>
+        <a href="#education" class="hover:text-purple-400">Education</a>
+        <a href="/resume.pdf" download class="hover:text-purple-400">Resume</a>
+      </nav>
+
+      <div class="w-full h-40 md:h-56 bg-cover bg-center" style="background-image: url('/streak.png')"></div>
+
+      <div class="relative z-10 p-6">
+        <header class="text-center pt-6">
+          <div class="flex justify-center mb-4">
+            <img src="/pic.png" alt="Profile" class="w-36 h-36 md:w-40 md:h-40 rounded-full border-4 border-white shadow-md hover-scale" />
+          </div>
+          <h1 class="text-4xl md:text-5xl font-extrabold mb-2 tracking-tight">Prudvikar Donthagani</h1>
+          <div class="flex justify-center gap-4 mt-3">
+            <a href="https://www.linkedin.com/in/prudvikar-donthagani-505070172/" target="_blank" class="hover-scale">LinkedIn</a>
+            <a href="https://leetcode.com/u/prudvikodi/" target="_blank" class="hover-scale">LeetCode</a>
+            <a href="mailto:pxd72500@ucmo.edu" class="border px-4 py-1.5 rounded border-white hover:bg-white hover:text-black transition text-sm hover-scale">Email Me</a>
+          </div>
+        </header>
+
+        <section id="about" class="my-16 max-w-3xl mx-auto text-center">
+          <h2 class="text-3xl font-semibold mb-4">About Me</h2>
+          <p class="text-zinc-300 leading-relaxed text-lg">
+            Software Engineer passionate about building cloud-native, scalable services. Strong foundation in system design, DevOps, and backend technologies. Awarded "Graduate Student Achievement Award" and ranked top 0.32% in CodeVita (800/250,000 globally).
+          </p>
+        </section>
+
+        <section id="skills" class="mb-20 max-w-5xl mx-auto text-center">
+          <h2 class="text-3xl font-semibold mb-6">Skills</h2>
+          <div class="space-y-12 text-zinc-300 text-sm">
+            <div>
+              <h3 class="text-xl font-semibold mb-4">Programming Languages</h3>
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-6">
+                <div class="flex items-center gap-3 text-base hover-scale">Python</div>
+                <div class="flex items-center gap-3 text-base hover-scale">Java</div>
+                <div class="flex items-center gap-3 text-base hover-scale">C</div>
+                <div class="flex items-center gap-3 text-base hover-scale">C++</div>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mb-4">Cloud &amp; DevOps</h3>
+              <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+                <div class="flex items-center gap-3 text-base hover-scale">OpenStack</div>
+                <div class="flex items-center gap-3 text-base hover-scale">Docker</div>
+                <div class="flex items-center gap-3 text-base hover-scale">Kubernetes</div>
+                <div class="flex items-center gap-3 text-base hover-scale">Jenkins</div>
+                <div class="flex items-center gap-3 text-base hover-scale">CI/CD Pipelines</div>
+                <div class="flex items-center gap-3 text-base hover-scale">Ansible</div>
+                <div class="flex items-center gap-3 text-base hover-scale">Terraform</div>
+                <div class="flex items-center gap-3 text-base hover-scale">Git</div>
+                <div class="flex items-center gap-3 text-base hover-scale">Gerrit</div>
+                <div class="flex items-center gap-3 text-base hover-scale">REST APIs</div>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mb-4">Databases</h3>
+              <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+                <div class="flex items-center gap-3 text-base hover-scale">SQL</div>
+                <div class="flex items-center gap-3 text-base hover-scale">PostgreSQL</div>
+                <div class="flex items-center gap-3 text-base hover-scale">MongoDB</div>
+                <div class="flex items-center gap-3 text-base hover-scale">Query Optimization</div>
+                <div class="flex items-center gap-3 text-base hover-scale">Indexing</div>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mb-4">Networking</h3>
+              <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+                <div class="flex items-center gap-3 text-base hover-scale">Network Security</div>
+                <div class="flex items-center gap-3 text-base hover-scale">SSL/TLS</div>
+                <div class="flex items-center gap-3 text-base hover-scale">TCP/IP</div>
+                <div class="flex items-center gap-3 text-base hover-scale">Subnetting</div>
+                <div class="flex items-center gap-3 text-base hover-scale">DNS</div>
+                <div class="flex items-center gap-3 text-base hover-scale">VPN</div>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mb-4">Project Management &amp; Collaboration</h3>
+              <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+                <div class="flex items-center gap-3 text-base hover-scale">Jira</div>
+                <div class="flex items-center gap-3 text-base hover-scale">Agile</div>
+                <div class="flex items-center gap-3 text-base hover-scale">Microsoft Teams</div>
+                <div class="flex items-center gap-3 text-base hover-scale">Scrum</div>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mb-4">System Design &amp; Software Engineering</h3>
+              <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+                <div class="flex items-center gap-3 text-base hover-scale">Microservices</div>
+                <div class="flex items-center gap-3 text-base hover-scale">High Availability Systems</div>
+                <div class="flex items-center gap-3 text-base hover-scale">OOPs</div>
+                <div class="flex items-center gap-3 text-base hover-scale">Scalability</div>
+                <div class="flex items-center gap-3 text-base hover-scale">Load Balancing</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="experience" class="relative mb-20 max-w-3xl mx-auto">
+          <div class="experience-overlay"></div>
+          <h2 class="text-3xl font-semibold text-center mb-6">Work Experience</h2>
+          <div class="space-y-6 text-zinc-300">
+            <div class="p-6 rounded-lg bg-zinc-800/60 experience-highlight hover-scale">
+              <h3 class="text-xl font-bold">System Engineer @ TCS (2021–2023)</h3>
+              <ul class="list-disc list-inside mt-2 text-sm">
+                <li>Implemented OpenStack NOVA &amp; KEYSTONE in production-grade cloud architecture.</li>
+                <li>Developed scalable backend services (Python, Java) with 95%+ uptime.</li>
+                <li>Optimized SQL queries, reducing latency by 50%.</li>
+                <li>Automated CI/CD pipelines, cutting deployment errors by 90%.</li>
+                <li>Supported 2M+ users with scalable architecture.</li>
+              </ul>
+            </div>
+            <div class="p-6 rounded-lg bg-zinc-800/60 experience-highlight hover-scale">
+              <h3 class="text-xl font-bold">Machine Learning Intern @ Movidu (2020)</h3>
+              <ul class="list-disc list-inside mt-2 text-sm">
+                <li>Built ML models using Scikit-learn, TensorFlow (classification, regression, clustering).</li>
+                <li>Engineered 10k+ rows of data and visualized with Matplotlib, Seaborn.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="projects" class="mb-20 max-w-5xl mx-auto">
+          <h2 class="text-3xl font-semibold text-center mb-12">Projects</h2>
+          <div class="grid md:grid-cols-2 gap-10">
+            <div class="bg-zinc-800 border border-zinc-700 rounded-xl p-6 shadow-lg hover:shadow-xl transition duration-300 hover-scale">
+              <h3 class="text-2xl font-bold mb-2">URL Shortener Web App</h3>
+              <p class="text-zinc-300 mb-4 text-sm leading-relaxed">Full-stack URL shortener with FastAPI backend and analytics dashboard.</p>
+              <div class="flex gap-4">
+                <a href="https://github.com/PRUDVIKAR/url-shortener" target="_blank" class="hover-scale">GitHub</a>
+                <a href="https://url-shortener-6cqw.onrender.com/" target="_blank" class="hover-scale">Demo</a>
+              </div>
+            </div>
+            <div class="bg-zinc-800 border border-zinc-700 rounded-xl p-6 shadow-lg hover:shadow-xl transition duration-300 hover-scale">
+              <h3 class="text-2xl font-bold mb-2">Tic Tac Toe Game</h3>
+              <p class="text-zinc-300 mb-4 text-sm leading-relaxed">Minimax AI-powered Python game with GUI and multi-mode support.</p>
+              <div class="flex gap-4">
+                <a href="https://github.com/PRUDVIKAR/tic_tac_toe" target="_blank" class="hover-scale">GitHub</a>
+              </div>
+            </div>
+            <div class="bg-zinc-800 border border-zinc-700 rounded-xl p-6 shadow-lg hover:shadow-xl transition duration-300 hover-scale">
+              <h3 class="text-2xl font-bold mb-2">Speech Emotion Recognition</h3>
+              <p class="text-zinc-300 mb-4 text-sm leading-relaxed">Live audio-based ML system that classifies emotion and gender.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="achievements" class="mb-20 max-w-3xl mx-auto text-center">
+          <h2 class="text-3xl font-semibold mb-6">Achievements</h2>
+          <div class="space-y-4 text-zinc-300">
+            <p>🏅 Ranked Top 0.32% in TCS CODEVITA (800/250,000)</p>
+            <p>🏅 Graduate Student Achievement Award at UCM</p>
+            <p>🏅 6-star in Algorithm, 5-star in Python on HackerRank</p>
+            <p>🏅 Spearheaded national-level college fest at JNTU</p>
+            <div class="mt-10">
+              <h3 class="text-xl font-semibold mb-2">Star of the Month – TCS</h3>
+              <img src="/star.png" alt="Star of the Month" class="mx-auto rounded shadow-lg w-[300px] md:w-[500px] hover-scale" />
+            </div>
+            <div class="mt-10">
+              <h3 class="text-xl font-semibold mb-2">LeetCode Badges</h3>
+              <img src="/Badge.png" alt="LeetCode Badges" class="mx-auto rounded shadow-md w-[300px] md:w-[500px] hover-scale" />
+            </div>
+          </div>
+        </section>
+
+        <section id="education" class="mb-20 max-w-3xl mx-auto text-center">
+          <h2 class="text-3xl font-semibold mb-6">Education</h2>
+          <ul class="space-y-4 text-zinc-300">
+            <li>
+              <strong>University of Central Missouri</strong> – Masters in Computer Science (2024 - 2025), GPA: 4.0<br />
+              Relevant Coursework: Adv Python, Java, Machine Learning, NoSQL, Information Assurance, Compiler Design, Adv Visualization, Adv Algorithms, Operating Systems, Networking &amp; Security
+            </li>
+            <li>
+              <strong>JNTUH College of Engineering</strong> – B.Tech in Computer Science (2017 - 2021), GPA: 3.4<br />
+              Relevant Coursework: C, C++, Java, Python, DSA, DBMS, OS, Cloud Computing
+            </li>
+          </ul>
+        </section>
+
+        <footer class="text-center text-zinc-500 text-sm py-10">
+          © 2025 Prudvikar Donthagani · Houston, TX
+        </footer>
+      </div>
+    </div>
   </body>
 </html>

@@ -47,3 +47,10 @@ section {
   to { transform: rotate(360deg); }
 }
 
+
+.hover-scale {
+  transition: transform 0.2s;
+}
+.hover-scale:hover {
+  transform: scale(1.05);
+}

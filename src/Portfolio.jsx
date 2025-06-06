@@ -1,5 +1,4 @@
 import React from "react";
-
 import {
   Github,
   ExternalLink,
@@ -95,7 +94,6 @@ export default function Portfolio() {
             Software Engineer passionate about building cloud-native, scalable services. Strong foundation in system design, DevOps, and backend technologies. Awarded "Graduate Student Achievement Award" and ranked top 0.32% in CodeVita (800/250,000 globally).
           </p>
         </motion.section>
-
 
         <motion.section
           id="skills"
