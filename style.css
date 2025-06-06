@@ -1,0 +1,55 @@
+#root {
+  animation: fade-in 0.8s ease-in-out;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 5rem;
+}
+
+.experience-highlight {
+  position: relative;
+}
+
+.experience-highlight::before {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  z-index: -1;
+  border-radius: 1rem;
+  background: linear-gradient(130deg, #7e3af2, #ec4899, #f59e0b);
+  filter: blur(40px);
+  opacity: 0.6;
+  animation: rotate 8s linear infinite;
+}
+
+.experience-overlay {
+  position: absolute;
+  inset: 0;
+  border-radius: 1rem;
+  z-index: -1;
+  background: linear-gradient(130deg, #7e3af2, #ec4899, #f59e0b);
+  filter: blur(60px);
+  opacity: 0.3;
+  animation: rotate 8s linear infinite;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.hover-scale {
+  transition: transform 0.2s;
+}
+.hover-scale:hover {
+  transform: scale(1.05);
+}
