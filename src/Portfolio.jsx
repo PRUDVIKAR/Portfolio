@@ -82,97 +82,163 @@ export default function Portfolio() {
           </p>
         </motion.section>
 
-        <motion.section
-          id="skills"
-          className="mb-20 max-w-5xl mx-auto text-center"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.8 }}
-        >
-          <h2 className="text-3xl font-semibold mb-6">Skills</h2>
-          <div className="space-y-10 text-zinc-300 text-sm">
-            <div>
-              <h3 className="text-xl font-semibold mb-4">Languages</h3>
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-                {[
-                  { name: "Python", icon: "python" },
-                  { name: "Java", icon: "java" },
-                  { name: "C", icon: "c" },
-                  { name: "C++", icon: "cplusplus" },
-                  { name: "JavaScript", icon: "javascript" },
-                  { name: "TypeScript", icon: "typescript" },
-                ].map((skill, i) => (
-                  <motion.div key={i} className="flex items-center gap-3 text-base" whileHover={{ scale: 1.05 }}>
-                    <img src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${skill.icon}/${skill.icon}-original.svg`} alt={skill.name} className="w-7 h-7" />
-                    {skill.name}
-                  </motion.div>
-                ))}
-              </div>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-4">Frontend / Frameworks</h3>
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-                {[
-                  { name: "React", icon: "react" },
-                  { name: "HTML5", icon: "html5" },
-                  { name: "CSS3", icon: "css3" },
-                ].map((skill, i) => (
-                  <motion.div key={i} className="flex items-center gap-3 text-base" whileHover={{ scale: 1.05 }}>
-                    <img src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${skill.icon}/${skill.icon}-original.svg`} alt={skill.name} className="w-7 h-7" />
-                    {skill.name}
-                  </motion.div>
-                ))}
-              </div>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-4">DevOps / Cloud</h3>
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-                {[
-                  { name: "Docker", icon: "docker" },
-                  { name: "Kubernetes", icon: "kubernetes" },
-                  { name: "Jenkins", icon: "jenkins" },
-                  { name: "Ansible", icon: "ansible" },
-                  { name: "Terraform", icon: "terraform" },
-                ].map((skill, i) => (
-                  <motion.div key={i} className="flex items-center gap-3 text-base" whileHover={{ scale: 1.05 }}>
-                    <img src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${skill.icon}/${skill.icon}-original.svg`} alt={skill.name} className="w-7 h-7" />
-                    {skill.name}
-                  </motion.div>
-                ))}
-              </div>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-4">Version Control</h3>
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-                {[
-                  { name: "Git", icon: "git" },
-                  { name: "Gerrit", icon: "gerrit" },
-                ].map((skill, i) => (
-                  <motion.div key={i} className="flex items-center gap-3 text-base" whileHover={{ scale: 1.05 }}>
-                    <img src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${skill.icon}/${skill.icon}-original.svg`} alt={skill.name} className="w-7 h-7" />
-                    {skill.name}
-                  </motion.div>
-                ))}
-              </div>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-4">Databases / OS</h3>
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-                {[
-                  { name: "PostgreSQL", icon: "postgresql" },
-                  { name: "MongoDB", icon: "mongodb" },
-                  { name: "SQL", icon: "mysql" },
-                  { name: "Linux", icon: "linux" },
-                ].map((skill, i) => (
-                  <motion.div key={i} className="flex items-center gap-3 text-base" whileHover={{ scale: 1.05 }}>
-                    <img src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${skill.icon}/${skill.icon}-original.svg`} alt={skill.name} className="w-7 h-7" />
-                    {skill.name}
-                  </motion.div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </motion.section>
+       <motion.section
+  id="skills"
+  className="mb-20 max-w-5xl mx-auto text-center"
+  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }}
+  transition={{ duration: 0.8 }}
+>
+  <h2 className="text-3xl font-semibold mb-6">Skills</h2>
+  <div className="space-y-12 text-zinc-300 text-sm">
+    <div>
+      <h3 className="text-xl font-semibold mb-4 flex items-center gap-2 justify-center sm:justify-start">
+        <Code2 className="w-6 h-6 text-purple-400" /> Programming Languages
+      </h3>
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
+        {[
+          { name: "Python", icon: "python" },
+          { name: "Java", icon: "java" },
+          { name: "C", icon: "c" },
+          { name: "C++", icon: "cplusplus" },
+        ].map((skill, i) => (
+          <motion.div key={i} className="flex items-center gap-3 text-base" whileHover={{ scale: 1.05 }}>
+            {skill.icon && (
+              <img
+                src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${skill.icon}/${skill.icon}-original.svg`}
+                alt={skill.name}
+                className="w-8 h-8"
+              />
+            )}
+            {skill.name}
+          </motion.div>
+        ))}
+      </div>
+    </div>
+
+    <div>
+      <h3 className="text-xl font-semibold mb-4 flex items-center gap-2 justify-center sm:justify-start">
+        <Cloud className="w-6 h-6 text-purple-400" /> Cloud &amp; DevOps
+      </h3>
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+        {[
+          { name: "OpenStack" },
+          { name: "Docker", icon: "docker" },
+          { name: "Kubernetes", icon: "kubernetes" },
+          { name: "Jenkins", icon: "jenkins" },
+          { name: "CI/CD Pipelines" },
+          { name: "Ansible", icon: "ansible" },
+          { name: "Terraform", icon: "terraform" },
+          { name: "Git", icon: "git" },
+          { name: "Gerrit", icon: "gerrit" },
+          { name: "REST APIs" },
+        ].map((skill, i) => (
+          <motion.div key={i} className="flex items-center gap-3 text-base" whileHover={{ scale: 1.05 }}>
+            {skill.icon && (
+              <img
+                src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${skill.icon}/${skill.icon}-original.svg`}
+                alt={skill.name}
+                className="w-8 h-8"
+              />
+            )}
+            {skill.name}
+          </motion.div>
+        ))}
+      </div>
+    </div>
+
+    <div>
+      <h3 className="text-xl font-semibold mb-4 flex items-center gap-2 justify-center sm:justify-start">
+        <Database className="w-6 h-6 text-purple-400" /> Databases
+      </h3>
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+        {[
+          { name: "SQL", icon: "mysql" },
+          { name: "PostgreSQL", icon: "postgresql" },
+          { name: "MongoDB", icon: "mongodb" },
+          { name: "Query Optimization" },
+          { name: "Indexing" },
+        ].map((skill, i) => (
+          <motion.div key={i} className="flex items-center gap-3 text-base" whileHover={{ scale: 1.05 }}>
+            {skill.icon && (
+              <img
+                src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${skill.icon}/${skill.icon}-original.svg`}
+                alt={skill.name}
+                className="w-8 h-8"
+              />
+            )}
+            {skill.name}
+          </motion.div>
+        ))}
+      </div>
+    </div>
+
+    <div>
+      <h3 className="text-xl font-semibold mb-4 flex items-center gap-2 justify-center sm:justify-start">
+        <Network className="w-6 h-6 text-purple-400" /> Networking
+      </h3>
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+        {[
+          { name: "Network Security" },
+          { name: "SSL/TLS" },
+          { name: "TCP/IP" },
+          { name: "Subnetting" },
+          { name: "DNS" },
+          { name: "VPN" },
+        ].map((skill, i) => (
+          <motion.div key={i} className="flex items-center gap-3 text-base" whileHover={{ scale: 1.05 }}>
+            {skill.name}
+          </motion.div>
+        ))}
+      </div>
+    </div>
+
+    <div>
+      <h3 className="text-xl font-semibold mb-4 flex items-center gap-2 justify-center sm:justify-start">
+        <Users className="w-6 h-6 text-purple-400" /> Project Management &amp; Collaboration
+      </h3>
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+        {[
+          { name: "Jira", icon: "jira" },
+          { name: "Agile" },
+          { name: "Microsoft Teams" },
+          { name: "Scrum" },
+        ].map((skill, i) => (
+          <motion.div key={i} className="flex items-center gap-3 text-base" whileHover={{ scale: 1.05 }}>
+            {skill.icon && (
+              <img
+                src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${skill.icon}/${skill.icon}-original.svg`}
+                alt={skill.name}
+                className="w-8 h-8"
+              />
+            )}
+            {skill.name}
+          </motion.div>
+        ))}
+      </div>
+    </div>
+
+    <div>
+      <h3 className="text-xl font-semibold mb-4 flex items-center gap-2 justify-center sm:justify-start">
+        <Server className="w-6 h-6 text-purple-400" /> System Design &amp; Software Engineering
+      </h3>
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+        {[
+          { name: "Microservices" },
+          { name: "High Availability Systems" },
+          { name: "OOPs" },
+          { name: "Scalability" },
+          { name: "Load Balancing" },
+        ].map((skill, i) => (
+          <motion.div key={i} className="flex items-center gap-3 text-base" whileHover={{ scale: 1.05 }}>
+            {skill.name}
+          </motion.div>
+        ))}
+      </div>
+    </div>
+  </div>
+</motion.section>
+
 
         <motion.section
           id="experience"
