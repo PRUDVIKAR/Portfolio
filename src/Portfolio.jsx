@@ -1,4 +1,5 @@
 import React from "react";
+
 import {
   Github,
   ExternalLink,
@@ -12,6 +13,7 @@ import {
   Server,
   Star,
 } from "lucide-react";
+
 import { motion } from "framer-motion";
 
 export default function Portfolio() {
@@ -93,6 +95,7 @@ export default function Portfolio() {
             Software Engineer passionate about building cloud-native, scalable services. Strong foundation in system design, DevOps, and backend technologies. Awarded "Graduate Student Achievement Award" and ranked top 0.32% in CodeVita (800/250,000 globally).
           </p>
         </motion.section>
+
 
         <motion.section
           id="skills"
@@ -283,12 +286,14 @@ export default function Portfolio() {
                 <Star className="w-5 h-5 text-yellow-400" /> System Engineer @ TCS (2021–2023)
               </h3>
               <ul className="list-disc list-inside mt-2 text-sm">
+
                 <li>Implemented OpenStack NOVA & KEYSTONE in production-grade cloud architecture.</li>
                 <li>Developed scalable backend services (Python, Java) with 95%+ uptime.</li>
                 <li>Optimized SQL queries, reducing latency by 50%.</li>
                 <li>Automated CI/CD pipelines, cutting deployment errors by 90%.</li>
                 <li>Supported 2M+ users with scalable architecture.</li>
               </ul>
+
             </motion.div>
             <motion.div
               className="p-6 rounded-lg bg-zinc-800/60 experience-highlight"
@@ -302,6 +307,7 @@ export default function Portfolio() {
                 <li>Engineered 10k+ rows of data and visualized with Matplotlib, Seaborn.</li>
               </ul>
             </motion.div>
+
           </div>
         </motion.section>
 
