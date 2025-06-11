@@ -1,5 +1,5 @@
 #root {
-  animation: fade-in 0.8s ease-in-out;
+  animation: fade-in 0.8s ease-in-out both;
 }
 
 @keyframes fade-in {
@@ -15,7 +15,7 @@ section {
   scroll-margin-top: 5rem;
 }
 
-/* Improve layout for work experience and education */
+/* Timeline layout for work experience and education */
 #experience,
 #education {
   max-width: 64rem; /* Tailwind max-w-5xl */
@@ -23,29 +23,36 @@ section {
 
 #experience > div,
 #education > div {
-  display: grid;
-  gap: 1.5rem; /* Tailwind gap-6 */
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-}
-
-@media (min-width: 768px) {
-  #experience > div,
-  #education > div {
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  }
+  position: relative;
+  margin-left: 1rem;
+  padding-left: 1.5rem;
+  border-left: 2px solid #52525b; /* border-zinc-600 */
 }
 
 #experience > div > div,
 #education > div > div {
+  position: relative;
+  margin-bottom: 2rem;
   background: linear-gradient(145deg, #27272a, #1e1e20);
   border: 1px solid #3f3f46; /* border-zinc-700 */
   padding: 1.5rem; /* p-6 */
   border-radius: 0.5rem; /* rounded-lg */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* shadow */
-  margin: 0; /* override space-y utilities */
   animation: card-slide-up 0.8s ease forwards;
   opacity: 0;
   transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#experience > div > div::before,
+#education > div > div::before {
+  content: "";
+  position: absolute;
+  left: -0.75rem;
+  top: 1rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: #7e22ce;
+  border-radius: 50%;
 }
 
 #experience > div > div:hover,
@@ -63,4 +70,23 @@ section {
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+/* Accessibility: Respect user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0s !important;
+    animation-delay: 0s !important;
+    transition-duration: 0s !important;
+    scroll-behavior: auto;
+  }
+}
+
+/* Back to top button */
+#backToTop {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#backToTop:hover {
+  background-color: #a855f7;
 }

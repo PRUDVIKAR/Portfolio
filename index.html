@@ -11,5 +11,31 @@
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const button = document.createElement('button');
+        button.id = 'backToTop';
+        button.textContent = '↑';
+        Object.assign(button.style, {
+          position: 'fixed',
+          bottom: '1rem',
+          right: '1rem',
+          padding: '0.5rem 0.75rem',
+          borderRadius: '0.375rem',
+          backgroundColor: '#7e22ce',
+          color: '#fff',
+          border: 'none',
+          display: 'none',
+          cursor: 'pointer'
+        });
+        document.body.appendChild(button);
+        window.addEventListener('scroll', () => {
+          button.style.display = window.scrollY > 400 ? 'block' : 'none';
+        });
+        button.addEventListener('click', () => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      });
+    </script>
   </body>
 </html>

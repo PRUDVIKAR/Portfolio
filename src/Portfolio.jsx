@@ -53,8 +53,8 @@ export default function Portfolio() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.7 }}
           >
-            <a href="https://www.linkedin.com/in/prudvikar-donthagani-505070172/" target="_blank"><Linkedin /></a>
-            <a href="https://leetcode.com/u/prudvikodi/" target="_blank">
+            <a href="https://www.linkedin.com/in/prudvikar-donthagani-505070172/" target="_blank" rel="noopener noreferrer"><Linkedin /></a>
+            <a href="https://leetcode.com/u/prudvikodi/" target="_blank" rel="noopener noreferrer">
               <img src="https://leetcode.com/favicon.ico" className="w-6 h-6" />
             </a>
             <a href="mailto:pxd72500@ucmo.edu">
@@ -248,7 +248,7 @@ export default function Portfolio() {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-3xl font-semibold text-center mb-6">Work Experience</h2>
-          <div className="grid gap-6 md:grid-cols-2 text-zinc-300">
+          <div className="text-zinc-300">
             <div className="bg-zinc-800 border border-zinc-700 p-6 rounded-lg shadow">
               <h3 className="text-xl font-bold mb-2">System Engineer @ TCS <span className="font-normal">(2021–2023)</span></h3>
               <ul className="list-disc list-inside space-y-1 text-sm text-left">
@@ -307,12 +307,12 @@ export default function Portfolio() {
                 <p className="text-zinc-300 mb-4 text-sm leading-relaxed">{proj.desc}</p>
                 <div className="flex gap-4">
                   {proj.github && (
-                    <a href={proj.github} target="_blank">
+                    <a href={proj.github} target="_blank" rel="noopener noreferrer">
                       <Github />
                     </a>
                   )}
                   {proj.demo && (
-                    <a href={proj.demo} target="_blank">
+                    <a href={proj.demo} target="_blank" rel="noopener noreferrer">
                       <ExternalLink />
                     </a>
                   )}
@@ -354,7 +354,7 @@ export default function Portfolio() {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-3xl font-semibold mb-6">Education</h2>
-          <div className="grid gap-6 md:grid-cols-2 text-zinc-300">
+          <div className="text-zinc-300">
             <div className="bg-zinc-800 border border-zinc-700 p-6 rounded-lg shadow text-left">
               <h3 className="text-xl font-semibold mb-1">University of Central Missouri</h3>
               <p className="italic mb-1">Masters in Computer Science (2024 - 2025)</p>
