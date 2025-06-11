@@ -53,8 +53,8 @@ export default function Portfolio() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.7 }}
           >
-            <a href="https://www.linkedin.com/in/prudvikar-donthagani-505070172/" target="_blank"><Linkedin /></a>
-            <a href="https://leetcode.com/u/prudvikodi/" target="_blank">
+            <a href="https://www.linkedin.com/in/prudvikar-donthagani-505070172/" target="_blank" rel="noopener noreferrer"><Linkedin /></a>
+            <a href="https://leetcode.com/u/prudvikodi/" target="_blank" rel="noopener noreferrer">
               <img src="https://leetcode.com/favicon.ico" className="w-6 h-6" />
             </a>
             <a href="mailto:pxd72500@ucmo.edu">
@@ -307,12 +307,12 @@ export default function Portfolio() {
                 <p className="text-zinc-300 mb-4 text-sm leading-relaxed">{proj.desc}</p>
                 <div className="flex gap-4">
                   {proj.github && (
-                    <a href={proj.github} target="_blank">
+                    <a href={proj.github} target="_blank" rel="noopener noreferrer">
                       <Github />
                     </a>
                   )}
                   {proj.demo && (
-                    <a href={proj.demo} target="_blank">
+                    <a href={proj.demo} target="_blank" rel="noopener noreferrer">
                       <ExternalLink />
                     </a>
                   )}
