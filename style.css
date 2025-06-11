@@ -22,29 +22,48 @@ section {
 }
 
 #experience > div,
-#education > ul {
+#education > div {
   display: grid;
   gap: 1.5rem; /* Tailwind gap-6 */
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+
 }
 
 @media (min-width: 768px) {
   #experience > div,
-  #education > ul {
-    grid-template-columns: repeat(2, 1fr); /* md:grid-cols-2 */
+  #education > div {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+
   }
 }
 
 #experience > div > div,
-#education > ul > li {
-  background-color: #27272a; /* bg-zinc-800 */
+#education > div > div {
+  background: linear-gradient(145deg, #27272a, #1e1e20);
   border: 1px solid #3f3f46; /* border-zinc-700 */
   padding: 1.5rem; /* p-6 */
   border-radius: 0.5rem; /* rounded-lg */
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5); /* shadow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* shadow */
   margin: 0; /* override space-y utilities */
+  animation: card-slide-up 0.8s ease forwards;
+  opacity: 0;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-#education > ul > li {
-  list-style: none;
-  text-align: left;
+#experience > div > div:hover,
+#education > div > div:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+@keyframes card-slide-up {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
 }
