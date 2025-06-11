@@ -1,5 +1,5 @@
 #root {
-  animation: fade-in 0.8s ease-in-out;
+  animation: fade-in 0.8s ease-in-out both;
 }
 
 @keyframes fade-in {
@@ -63,4 +63,23 @@ section {
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+/* Accessibility: Respect user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0s !important;
+    animation-delay: 0s !important;
+    transition-duration: 0s !important;
+    scroll-behavior: auto;
+  }
+}
+
+/* Back to top button */
+#backToTop {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#backToTop:hover {
+  background-color: #a855f7;
 }
