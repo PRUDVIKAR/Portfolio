@@ -248,7 +248,7 @@ export default function Portfolio() {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-3xl font-semibold text-center mb-6">Work Experience</h2>
-          <div className="grid gap-6 md:grid-cols-2 text-zinc-300">
+          <div className="text-zinc-300">
             <div className="bg-zinc-800 border border-zinc-700 p-6 rounded-lg shadow">
               <h3 className="text-xl font-bold mb-2">System Engineer @ TCS <span className="font-normal">(2021–2023)</span></h3>
               <ul className="list-disc list-inside space-y-1 text-sm text-left">
@@ -354,7 +354,7 @@ export default function Portfolio() {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-3xl font-semibold mb-6">Education</h2>
-          <div className="grid gap-6 md:grid-cols-2 text-zinc-300">
+          <div className="text-zinc-300">
             <div className="bg-zinc-800 border border-zinc-700 p-6 rounded-lg shadow text-left">
               <h3 className="text-xl font-semibold mb-1">University of Central Missouri</h3>
               <p className="italic mb-1">Masters in Computer Science (2024 - 2025)</p>
