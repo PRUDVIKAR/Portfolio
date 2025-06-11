@@ -14,3 +14,37 @@ html {
 section {
   scroll-margin-top: 5rem;
 }
+
+/* Improve layout for work experience and education */
+#experience,
+#education {
+  max-width: 64rem; /* Tailwind max-w-5xl */
+}
+
+#experience > div,
+#education > ul {
+  display: grid;
+  gap: 1.5rem; /* Tailwind gap-6 */
+}
+
+@media (min-width: 768px) {
+  #experience > div,
+  #education > ul {
+    grid-template-columns: repeat(2, 1fr); /* md:grid-cols-2 */
+  }
+}
+
+#experience > div > div,
+#education > ul > li {
+  background-color: #27272a; /* bg-zinc-800 */
+  border: 1px solid #3f3f46; /* border-zinc-700 */
+  padding: 1.5rem; /* p-6 */
+  border-radius: 0.5rem; /* rounded-lg */
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5); /* shadow */
+  margin: 0; /* override space-y utilities */
+}
+
+#education > ul > li {
+  list-style: none;
+  text-align: left;
+}
