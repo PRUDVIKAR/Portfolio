@@ -26,12 +26,14 @@ section {
   display: grid;
   gap: 1.5rem; /* Tailwind gap-6 */
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+
 }
 
 @media (min-width: 768px) {
   #experience > div,
   #education > div {
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+
   }
 }
 
@@ -63,4 +65,5 @@ section {
     transform: translateY(0);
     opacity: 1;
   }
+
 }
