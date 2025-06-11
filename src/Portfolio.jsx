@@ -242,16 +242,16 @@ export default function Portfolio() {
 
         <motion.section
           id="experience"
-          className="mb-20 max-w-3xl mx-auto"
+          className="mb-20 max-w-5xl mx-auto"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-3xl font-semibold text-center mb-6">Work Experience</h2>
-          <div className="space-y-6 text-zinc-300">
-            <div>
-              <h3 className="text-xl font-bold">System Engineer @ TCS (2021–2023)</h3>
-              <ul className="list-disc list-inside">
+          <div className="grid gap-6 md:grid-cols-2 text-zinc-300">
+            <div className="bg-zinc-800 border border-zinc-700 p-6 rounded-lg shadow">
+              <h3 className="text-xl font-bold mb-2">System Engineer @ TCS <span className="font-normal">(2021–2023)</span></h3>
+              <ul className="list-disc list-inside space-y-1 text-sm text-left">
                 <li>Implemented OpenStack NOVA & KEYSTONE in production-grade cloud architecture.</li>
                 <li>Developed scalable backend services (Python, Java) with 95%+ uptime.</li>
                 <li>Optimized SQL queries, reducing latency by 50%.</li>
@@ -259,9 +259,9 @@ export default function Portfolio() {
                 <li>Supported 2M+ users with scalable architecture.</li>
               </ul>
             </div>
-            <div>
-              <h3 className="text-xl font-bold">Machine Learning Intern @ Movidu (2020)</h3>
-              <ul className="list-disc list-inside">
+            <div className="bg-zinc-800 border border-zinc-700 p-6 rounded-lg shadow">
+              <h3 className="text-xl font-bold mb-2">Machine Learning Intern @ Movidu <span className="font-normal">(2020)</span></h3>
+              <ul className="list-disc list-inside space-y-1 text-sm text-left">
                 <li>Built ML models using Scikit-learn, TensorFlow (classification, regression, clustering).</li>
                 <li>Engineered 10k+ rows of data and visualized with Matplotlib, Seaborn.</li>
               </ul>
@@ -348,24 +348,26 @@ export default function Portfolio() {
 
         <motion.section
           id="education"
-          className="mb-20 max-w-3xl mx-auto text-center"
+          className="mb-20 max-w-5xl mx-auto text-center"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-3xl font-semibold mb-6">Education</h2>
-          <ul className="space-y-4 text-zinc-300">
-            <li>
-              <strong>University of Central Missouri</strong> – Masters in Computer Science (2024 - 2025), GPA: 4.0
-              <br />
-              Relevant Coursework: Adv Python, Java, Machine Learning, NoSQL, Information Assurance, Compiler Design, Adv Visualization, Adv Algorithms, Operating Systems, Networking & Security
-            </li>
-            <li>
-              <strong>JNTUH College of Engineering</strong> – B.Tech in Computer Science (2017 - 2021), GPA: 3.4
-              <br />
-              Relevant Coursework: C, C++, Java, Python, DSA, DBMS, OS, Cloud Computing
-            </li>
-          </ul>
+          <div className="grid gap-6 md:grid-cols-2 text-zinc-300">
+            <div className="bg-zinc-800 border border-zinc-700 p-6 rounded-lg shadow text-left">
+              <h3 className="text-xl font-semibold mb-1">University of Central Missouri</h3>
+              <p className="italic mb-1">Masters in Computer Science (2024 - 2025)</p>
+              <p className="mb-2">GPA: 4.0</p>
+              <p className="text-sm leading-relaxed">Relevant Coursework: Adv Python, Java, Machine Learning, NoSQL, Information Assurance, Compiler Design, Adv Visualization, Adv Algorithms, Operating Systems, Networking & Security</p>
+            </div>
+            <div className="bg-zinc-800 border border-zinc-700 p-6 rounded-lg shadow text-left">
+              <h3 className="text-xl font-semibold mb-1">JNTUH College of Engineering</h3>
+              <p className="italic mb-1">B.Tech in Computer Science (2017 - 2021)</p>
+              <p className="mb-2">GPA: 3.4</p>
+              <p className="text-sm leading-relaxed">Relevant Coursework: C, C++, Java, Python, DSA, DBMS, OS, Cloud Computing</p>
+            </div>
+          </div>
         </motion.section>
 
         <motion.footer
