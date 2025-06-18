@@ -250,7 +250,15 @@ export default function Portfolio() {
           <h2 className="text-3xl font-semibold text-center mb-6">Work Experience</h2>
           <div className="text-zinc-300">
             <div className="bg-zinc-800 border border-zinc-700 p-6 rounded-lg shadow">
-              <h3 className="text-xl font-bold mb-2">System Engineer @ TCS <span className="font-normal">(2021–2023)</span></h3>
+              <h3 className="text-xl font-bold mb-2">QUADRANT TECHNOLOGIES [Remote, USA] - Python Developer <span className="font-normal">(01/2025 – Present)</span></h3>
+              <ul className="list-disc list-inside space-y-1 text-sm text-left">
+                <li>Built scalable microservices using Python (FastAPI), improved API performance by 35%, and implemented async processing with Celery</li>
+                <li>Led CI/CD automation with Docker and GitHub Actions, reducing release time by 60%, and drove code quality with 90%+ test coverage.</li>
+                <li>Collaborated across teams to design secure, production-grade systems with OAuth2, JWT, and containerized cloud deployments.</li>
+              </ul>
+            </div>
+            <div className="bg-zinc-800 border border-zinc-700 p-6 rounded-lg shadow">
+              <h3 className="text-xl font-bold mb-2">System Engineer @ TCS <span className="font-normal">(2020–2023)</span></h3>
               <ul className="list-disc list-inside space-y-1 text-sm text-left">
                 <li>Implemented OpenStack NOVA & KEYSTONE in production-grade cloud architecture.</li>
                 <li>Developed scalable backend services (Python, Java) with 95%+ uptime.</li>
@@ -360,12 +368,6 @@ export default function Portfolio() {
               <p className="italic mb-1">Masters in Computer Science (2024 - 2025)</p>
               <p className="mb-2">GPA: 4.0</p>
               <p className="text-sm leading-relaxed">Relevant Coursework: Adv Python, Java, Machine Learning, NoSQL, Information Assurance, Compiler Design, Adv Visualization, Adv Algorithms, Operating Systems, Networking & Security</p>
-            </div>
-            <div className="bg-zinc-800 border border-zinc-700 p-6 rounded-lg shadow text-left">
-              <h3 className="text-xl font-semibold mb-1">JNTUH College of Engineering</h3>
-              <p className="italic mb-1">B.Tech in Computer Science (2017 - 2021)</p>
-              <p className="mb-2">GPA: 3.4</p>
-              <p className="text-sm leading-relaxed">Relevant Coursework: C, C++, Java, Python, DSA, DBMS, OS, Cloud Computing</p>
             </div>
           </div>
         </motion.section>
